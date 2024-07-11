@@ -1,7 +1,7 @@
 <script>
-	import MyProject from '../component/project.svelte';
+	import MySkill from '../component/skills.svelte';
+	import MyProject from '../component/projects.svelte';
     let name = "ゆーき";
-    let skills = ["HTML", "CSS", "JavaScript", "その他のスキル"];
 </script>
 
 <style>
@@ -75,14 +75,7 @@
         <p>こんにちは、{name}(北陽悠生)です。エンジニア志望の学生で、主にWeb開発に興味があります。</p>
     </section>
 
-    <section id="skills">
-        <h2>スキルセット</h2>
-        <ul>
-            {#each skills as skill}
-                <li>{skill}</li>
-            {/each}
-        </ul>
-    </section>
+    <MySkill></MySkill>
 
 	<MyProject></MyProject>
 

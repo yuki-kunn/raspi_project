@@ -1,4 +1,3 @@
-
 <script>
     let projects = [
         { title: "プロジェクト1", description: "プロジェクトの説明。" },
