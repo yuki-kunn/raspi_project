@@ -1,15 +1,7 @@
 <script>
-    let name = "あなたの名前";
-    let projects = [
-        { title: "プロジェクト1", description: "プロジェクトの説明。" },
-        { title: "プロジェクト2", description: "プロジェクトの説明。" }
-    ];
+	import MyProject from '../component/project.svelte';
+    let name = "ゆーき";
     let skills = ["HTML", "CSS", "JavaScript", "その他のスキル"];
-    let contactForm = { name: "", email: "", message: "" };
-
-    function submitForm() {
-        alert(`名前: ${contactForm.name}\nメールアドレス: ${contactForm.email}\nメッセージ: ${contactForm.message}`);
-    }
 </script>
 
 <style>
@@ -63,37 +55,11 @@
         bottom: 0;
         width: 100%;
     }
-
-    form label {
-        display: block;
-        margin: 10px 0 5px;
-    }
-
-    form input, form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    form button {
-        padding: 10px 20px;
-        border: none;
-        background: #333;
-        color: #fff;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-
-    form button:hover {
-        background: #555;
-    }
 </style>
 
 <main>
     <header>
-        <h1>私のポートフォリオ</h1>
+        <h1>Yuki'sポートフォリオ</h1>
         <nav>
             <ul>
                 <li><a href="#about">自己紹介</a></li>
@@ -106,17 +72,7 @@
 
     <section id="about">
         <h2>自己紹介</h2>
-        <p>こんにちは、{name}です。エンジニア志望の学生で、主にWeb開発に興味があります。</p>
-    </section>
-
-    <section id="projects">
-        <h2>プロジェクト</h2>
-        {#each projects as project}
-            <div class="project">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-            </div>
-        {/each}
+        <p>こんにちは、{name}(北陽悠生)です。エンジニア志望の学生で、主にWeb開発に興味があります。</p>
     </section>
 
     <section id="skills">
@@ -128,20 +84,11 @@
         </ul>
     </section>
 
+	<MyProject></MyProject>
+
     <section id="contact">
         <h2>お問い合わせ</h2>
-        <form on:submit|preventDefault={submitForm}>
-            <label for="name">名前:</label>
-            <input type="text" id="name" bind:value={contactForm.name} required>
-            
-            <label for="email">メールアドレス:</label>
-            <input type="email" id="email" bind:value={contactForm.email} required>
-            
-            <label for="message">メッセージ:</label>
-            <textarea id="message" bind:value={contactForm.message} required></textarea>
-            
-            <button type="submit">送信</button>
-        </form>
+        
     </section>
 
     <footer>
