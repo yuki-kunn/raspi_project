@@ -10,4 +10,6 @@ declare global {
 	}
 }
 
-export {};
+export * from 'component/projects.svelte'
+export * from 'component/skils.svelte'
+
