@@ -5,18 +5,21 @@
 </script>
 
 <style>
-    body {
+    main {
         font-family: Arial, sans-serif;
         line-height: 1.6;
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
+        width: 100vw;
     }
 
     header {
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
         background: #333;
         color: #fff;
-        padding: 1em 0;
         text-align: center;
     }
 
@@ -45,15 +48,16 @@
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: auto;
     }
 
     footer {
-        text-align: center;
-        padding: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
         background: #333;
         color: #fff;
-        bottom: 0;
-        width: 100%;
+        text-align: center;
     }
 </style>
 

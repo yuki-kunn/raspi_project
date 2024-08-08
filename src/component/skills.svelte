@@ -1,5 +1,5 @@
 <script>
-    let skills = ["HTML", "CSS", "JavaScript", "Python"];
+    let skills = ["HTML", "CSS", "JavaScript", "Python", "PHP"];
 </script>
 
 <style>
